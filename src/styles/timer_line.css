@@ -1,0 +1,25 @@
+
+.timer_line {
+    width: 40%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.timer_progress {
+    width: 0; /* Начнем с пустой полосы */
+    height: 100%;
+    background-color: #2a2a2a;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: width 1s linear; /* Добавляем анимацию изменения ширины только здесь */
+    
+    height: 3px;
+    background-color: white;
+    border-radius: 100px;
+    transform: translateY(-1px);
+    width: 0%;
+
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomofocus</title>
+    <link rel="stylesheet" href="./../src/styles/main.css">
+</head>
+
+<body>
+    <div class="header__top">
+        <div class="header__top-row">
+            <div class="header__logo">
+                <a href="#!">
+                    <img src="./../src/img/logo.png" alt="Pomofocus">
+                    <div class="logo__name">Pomofocus</div>
+                </a>
+            </div>
+
+            <div class="header__nav">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li>
+                            <a class="graph" href="#">
+                                <img src="./../src/img/report.png" alt="">
+                                <div class="report__text">Report</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="config" href="#">
+                                <img src="./../src/img/setting.png" alt="">
+                                <div class="setting__text">Setting</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="user" id="userLink" href="#">
+                                <img src="./../src/img/login.png" alt="">
+                                <div class="login__text">Login</div>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="header__nav-btn">
+                <div class="nav-icon-btn">
+                    <div class="nav-icon">
+                        <button class="graph">
+                            <img src="./../src/img/report.png" alt="Report">
+                        </button>
+                        <button class="config">
+                            <img src="./../src/img/setting.png" alt="Setting">
+                        </button>
+                        <button class="user">
+                            <img src="./../src/img/login.png" alt="Login">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="timer_line" id="timer-line">
+            <div class="timer_progress"></div>
+        </div>
+
+        <div class="main_timer">
+            <div class="period_type">
+                <button class="work">
+                    Pomodoro
+                </button>
+                <button class="s_break">
+                    Short Break
+                </button>
+                <button class="l_break">
+                    Long Break
+                </button>
+            </div>
+
+            <div class="timer">
+                <span id="timer-display"></span>
+            </div>
+
+            <button class="status" onclick="startTimer()">
+                START
+            </button>      
+        </div>
+
+        <div class="task_num">
+            #1
+        </div>
+
+        <div class="text_period">
+            Time to focus!
+        </div>
+
+        <div class="tasks">
+            
+
+        </div>
+
+        <!-- Всплывающее окно авторизации -->
+        <div id="loginPopup" class="modal">
+            <div class="modal-content">
+                <span id="closePopupButton" class="close">&times;</span>
+                <input id="username" type="text" placeholder="Username">
+                <input id="password" type="password" placeholder="Password">
+                <button id="loginButton" class="login-btn">Войти</button>
+                <button class="logout" style="display: none">Выйти</button>
+            </div>
+        </div>
+
+    </div>
+    <script src="./../src/js/timer.js"></script>
+    <script src="./../src/js/login.js"></script>
+</body>
+
+</html>
