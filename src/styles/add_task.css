@@ -26,3 +26,144 @@
     font-weight: bold;
     color: white;
 }
+
+.new_task {
+    background-color: white;
+    border-radius: 8px;
+    text-align: left;
+    margin-top: 12px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 10px 20px, rgba(0, 0, 0, 0.1) 0px 3px 6px;
+    animation: 0.1s ease-in-out 0s 1 normal none running expand;
+}
+
+.task_container {
+    padding: 10px 20px 0px;
+}
+
+.task_name {
+    padding: 8px 0px;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    width: 100%;
+}
+
+.task_input{
+    border-radius: 4px;
+    font-size: 22px;
+    padding: 10px 0px;
+    box-shadow: none;
+    border: none;
+    color: rgb(85, 85, 85);
+    width: 100%;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+.count_pomomodoro {
+    margin-bottom: 2px;
+    color: rgb(85, 85, 85);
+    font-weight: bold;
+    text-align: left;
+}
+.number {
+    border-radius: 4px;
+    background-color: rgb(239, 239, 239);
+    font-size: 16px;
+    padding: 10px;
+    box-shadow: none;
+    border: none;
+    color: rgb(85, 85, 85);
+    width: 75px;
+    box-sizing: border-box;
+    margin-right: 10px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.decrease, .increase {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    opacity: 0.9;
+    font-size: 14px;
+    padding: 8px 12px;
+    display: inline-block;
+    min-width: 0px;
+    width: 40px;
+    background-color: white;
+    color: rgb(85, 85, 85);
+    border: 1px solid rgb(223, 223, 223);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 2px;
+    margin: 10px 2px 0px;
+}
+
+.add_param{
+    padding: 8px 0px;
+}
+ 
+.add_note, .add_proj {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    opacity: 0.9;
+    font-size: 14px;
+    background: none;
+    border: none;
+    box-shadow: none;
+    color: rgba(0, 0, 0, 0.4);
+    font-weight: bold;
+    letter-spacing: 0.02em;
+    text-decoration: underline;
+    display: inline-block;
+}
+
+.manage_task {
+    padding: 14px 20px;
+    text-align: right;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: rgb(239, 239, 239);
+    display: flex;
+    justify-content:left;
+    align-items: center;
+}
+
+.manage_task .cansel {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    opacity: 0.9;
+    font-size: 14px;
+    padding: 8px 12px;
+    min-width: 70px;
+    display: inline-block;
+    margin-right: 14px;
+    background: none;
+    border: none;
+    color: rgb(136, 136, 136);
+    font-weight: bold;
+    box-shadow: none;
+}
+.manage_task .save{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 2px;
+    color: white;
+    opacity: 0.9;
+    font-size: 14px;
+    padding: 8px 12px;
+    min-width: 70px;
+    background-color: rgb(34, 34, 34);
+    border: 2px solid rgb(34, 34, 34);
+    display: inline-block;
+}
