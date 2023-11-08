@@ -91,3 +91,16 @@
     color: white;
     overflow-wrap: break-word;
 }
+
+
+@media (max-width: 576px) {
+    .main{
+        padding: 0px 12px;
+        max-width: 620px;
+    }
+
+    .main_timer{
+        max-width: 480px;
+    }
+
+}
